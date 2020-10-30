@@ -1,5 +1,7 @@
 package com.atqgh.springboot.bean;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
 /**
@@ -8,24 +10,9 @@ import java.io.Serializable;
  * @Date: Created in 23:36 2019/4/24
  * @Modified By:
  **/
+@Data
 public class Department implements Serializable {
 
     private Integer id;
     private String departmentName;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getDepartmentName() {
-        return departmentName;
-    }
-
-    public void setDepartmentName(String departmentName) {
-        this.departmentName = departmentName;
-    }
 }

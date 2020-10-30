@@ -36,10 +36,10 @@ public class DruidConfig {
     public ServletRegistrationBean statViewServlet(){
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
         Map<String,String> initParams = new HashMap<String,String>();
-        initParams.put("loginUsername","admin");
-        initParams.put("loginPassword","123456");
-        initParams.put("allow","");
-        initParams.put("deny","192.168.15.21");
+        initParams.put("loginUsername","admin"); // 登录的用户名
+        initParams.put("loginPassword","123456"); // 登录的密码
+        initParams.put("allow",""); // 允许哪些ip
+        initParams.put("deny",""); // 拒绝ip
         servletRegistrationBean.setInitParameters(initParams);
         return servletRegistrationBean;
     }
