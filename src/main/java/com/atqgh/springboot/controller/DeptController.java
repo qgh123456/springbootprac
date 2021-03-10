@@ -29,4 +29,9 @@ public class DeptController {
         return departmentService.getDeptById(id);
     }
 
+    @GetMapping("/hello")
+    public String hello(){
+        return "hello";
+    }
+
 }

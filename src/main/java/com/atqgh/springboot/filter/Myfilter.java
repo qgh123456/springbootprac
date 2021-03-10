@@ -18,8 +18,10 @@ public class Myfilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        System.out.println("1111111111111");
+        System.out.println("before====1111111111111");
         filterChain.doFilter(servletRequest,servletResponse);
+        System.out.println("after====1111111111111");
+
     }
 
     @Override

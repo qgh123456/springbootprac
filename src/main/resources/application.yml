@@ -4,7 +4,10 @@ spring:
     password: root
     url: jdbc:mysql://127.0.0.1:3306/test
     driver-class-name: com.mysql.jdbc.Driver
+    name: optocon
     type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      filters: stat,wall,logback
     initialSize: 5
     minIdle: 5
     maxActive: 10
@@ -60,3 +63,8 @@ mybatis:
 logging:
   level:
     com.atqgh.springboot.mapper: DEBUG #这个地方是显示sql日志的
+
+user:
+  name1: xiaoming1
+  age: 18
+  sex: man11
